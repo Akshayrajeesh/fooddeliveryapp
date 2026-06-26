@@ -74,6 +74,6 @@ export const {
   updateFail,
   updateReset,
   clearErrors,
-};
+} = userSlice.actions;
 
 export default userSlice.reducer;
