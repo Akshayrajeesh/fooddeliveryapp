@@ -7,8 +7,9 @@ const menuSchema = new mongoose.Schema(
       {
         category: {
           type: String,
-          items: [{ type: mongoose.Schema.Types.ObjectId, ref: "FoodItem" }],
+          required: [true, "Category is required"],
         },
+        items: [{ type: mongoose.Schema.Types.ObjectId, ref: "FoodItem" }],
       },
     ],
     restaurant: {
